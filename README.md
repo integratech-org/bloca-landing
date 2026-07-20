@@ -1,21 +1,52 @@
-# Next.js template
+# bloca-landing
 
-This is a Next.js template with shadcn/ui.
+Marketing/landing web app for BLOCA.
 
-## Adding components
+## Tech stack
 
-To add components to your app, run the following command:
+- Next.js 16 (App Router)
+- React 19 + TypeScript
+- Tailwind CSS 4 + shadcn/ui
+- next-themes
+
+## Prerequisites
+
+- Bun 1.x
+
+## Getting started
 
 ```bash
-npx shadcn@latest add button
+# install dependencies
+bun install
+
+# start development server
+bun run dev
 ```
 
-This will place the ui components in the `components` directory.
+Open `http://localhost:3000`.
 
-## Using components
+## Available scripts
 
-To use the components in your app, import them as follows:
+- `bun run dev` — start local dev server
+- `bun run build` — create production build
+- `bun run start` — run production server
+- `bun run lint` — run ESLint
+- `bun run lint:fix` — run ESLint and auto-fix
+- `bun run ts-check` — run TypeScript checks
+- `bun run prettier:check` — verify formatting
+- `bun run prettier:fix` / `bun run format` — format codebase
 
-```tsx
-import { Button } from "@/components/ui/button"
+## Project structure
+
+```txt
+src/
+  app/         # Next.js routes and layouts
+  components/  # reusable UI components
+  hooks/       # custom hooks
+  lib/         # utility helpers
 ```
+
+## Notes
+
+- Current homepage is at `src/app/page.tsx`.
+- Theme support is wired through `ThemeProvider` in `src/app/layout.tsx`.
