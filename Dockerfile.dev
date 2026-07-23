@@ -1,0 +1,25 @@
+# ============================================
+# Development Dockerfile for Next.js
+# ============================================
+
+FROM dhi.io/bun:1.3.14-alpine3.22-dev AS dev
+
+WORKDIR /app
+
+COPY package.json bun.lock* bun.lockb* ./
+
+RUN --mount=type=cache,target=/root/.bun/install/cache \
+  if [ -f bun.lock ] || [ -f bun.lockb ]; then \
+  bun install --frozen-lockfile; \
+  else \
+  echo "No lockfile found." && exit 1; \
+  fi
+
+COPY . .
+
+ENV WATCHPACK_POLLING=true
+ENV HOSTNAME="0.0.0.0"
+
+EXPOSE 3000
+
+CMD ["bun", "run", "dev"]
