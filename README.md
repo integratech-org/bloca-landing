@@ -1,52 +1,36 @@
-# bloca-landing
+# Bloca Landing Page (`bloca-landing`)
 
-Marketing/landing web app for BLOCA.
+Part of the **BLOCA** ecosystem — an IoT-monitored plastic-to-brick compactor with machine learning-based grading.
 
-## Tech stack
+`bloca-landing` is the official marketing and public web portal for Bloca, showcasing how plastic waste is transformed into construction-ready building blocks through IoT monitoring and AI grading.
 
-- Next.js 16 (App Router)
-- React 19 + TypeScript
-- Tailwind CSS 4 + shadcn/ui
-- next-themes
+## Features
 
-## Prerequisites
+- **Product Showcase:** Interactive overview of the plastic compaction and brick grading technology.
+- **Impact Metrics:** Real-time or illustrative statistics on plastic diverted from landfills and bricks produced.
+- **Responsive Design:** Mobile-first, high-performance UI styled with Tailwind CSS v4.
 
-- Bun 1.x
+## Tech Stack
 
-## Getting started
+- **Framework:** Next.js 16 with React 19 & TypeScript
+- **Styling:** Tailwind CSS v4 with Shadcn UI & Next Themes
+- **Quality Control:** ESLint, Prettier, TypeScript, and Husky pre-commit hooks
 
-```bash
-# install dependencies
-bun install
+## Project Structure
 
-# start development server
-bun run dev
+```text
+bloca-landing/
+├── public/            # Static images and icons
+├── src/
+│   ├── app/           # Next.js App Router (layout, page, styles)
+│   ├── components/    # Reusable UI components & theme provider
+│   └── lib/           # Utility functions
+├── next.config.ts
+├── package.json
+└── tsconfig.json
 ```
 
-Open `http://localhost:3000`.
+## Related Repositories
 
-## Available scripts
-
-- `bun run dev` — start local dev server
-- `bun run build` — create production build
-- `bun run start` — run production server
-- `bun run lint` — run ESLint
-- `bun run lint:fix` — run ESLint and auto-fix
-- `bun run ts-check` — run TypeScript checks
-- `bun run prettier:check` — verify formatting
-- `bun run prettier:fix` / `bun run format` — format codebase
-
-## Project structure
-
-```txt
-src/
-  app/         # Next.js routes and layouts
-  components/  # reusable UI components
-  hooks/       # custom hooks
-  lib/         # utility helpers
-```
-
-## Notes
-
-- Current homepage is at `src/app/page.tsx`.
-- Theme support is wired through `ThemeProvider` in `src/app/layout.tsx`.
+- [`bloca-admin`](https://github.com/integratech-org/bloca-admin) - Admin dashboard web UI
+- [`bloca-mobile`](https://github.com/integratech-org/bloca-mobile) - Cross-platform mobile app
