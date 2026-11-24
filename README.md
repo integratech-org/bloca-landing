@@ -1,12 +1,11 @@
 <a id="readme-top"></a>
 
 <!-- PROJECT SHIELDS -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -31,8 +30,6 @@
   </p>
 </div>
 
-
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -56,9 +53,8 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 [![BLOCA Landing Banner][product-banner]](https://github.com/integratech-org/bloca-landing)
@@ -69,29 +65,26 @@ The website features product overviews, technical specifications, case studies, 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 ### Built With
 
-* [![Next.js][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![TypeScript][TypeScript.org]][TypeScript-url]
-* [![TailwindCSS][TailwindCSS.com]][TailwindCSS-url]
-* [![Lucide][Lucide.dev]][Lucide-url]
-* [![Docker][Docker.com]][Docker-url]
+- [![Next.js][Next.js]][Next-url]
+- [![React][React.js]][React-url]
+- [![TypeScript][TypeScript.org]][TypeScript-url]
+- [![TailwindCSS][TailwindCSS.com]][TailwindCSS-url]
+- [![Lucide][Lucide.dev]][Lucide-url]
+- [![Docker][Docker.com]][Docker-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 This is a modern Next.js application that can be deployed as a static site or containerized with Docker.
 
 ### Prerequisites
 
-* **Software:**
+- **Software:**
   - Node.js 20 or higher
   - [Bun](https://bun.sh/) package manager (recommended) or npm
   - Docker and Docker Compose (for containerized deployment)
@@ -99,17 +92,20 @@ This is a modern Next.js application that can be deployed as a static site or co
 ### Installation
 
 1. Clone the repository
+
    ```sh
    git clone https://github.com/integratech-org/bloca-landing.git
    cd bloca-landing
    ```
 
 2. Install dependencies
+
    ```sh
    bun install
    ```
 
 3. Create environment configuration (if needed)
+
    ```sh
    cp .env.example .env.local
    # Edit .env.local with your specific configuration:
@@ -119,6 +115,7 @@ This is a modern Next.js application that can be deployed as a static site or co
    ```
 
 4. Start the development server
+
    ```sh
    bun dev
    ```
@@ -130,9 +127,8 @@ This is a modern Next.js application that can be deployed as a static site or co
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- USAGE EXAMPLES -->
+
 ## Usage
 
 ### Development
@@ -196,12 +192,12 @@ bun prettier:check
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- FEATURES -->
+
 ## Features
 
 ### Marketing & Content
+
 - **Hero Section**: Eye-catching introduction with product tagline and call-to-action buttons
 - **Product Overview**: High-level explanation of BLOCA's value proposition and key benefits
 - **Technical Specifications**: Detailed specs for hardware components and software features
@@ -209,18 +205,21 @@ bun prettier:check
 - **Pricing Information**: Transparent pricing tiers or contact sales CTA
 
 ### Documentation & Resources
+
 - **Getting Started Guide**: Quick start instructions for new users
 - **API Documentation Links**: Direct links to BLOCA API, ML, and other technical docs
 - **FAQ Section**: Answers to common questions about the system
 - **Download Resources**: Brochures, whitepapers, and technical diagrams (PDF)
 
 ### User Engagement
+
 - **Contact Form**: Lead capture form with form validation
 - **Newsletter Signup**: Email subscription for product updates
 - **Social Media Integration**: Links to Facebook, LinkedIn, GitHub organization
 - **Testimonials**: Customer quotes and ratings (if available)
 
 ### Performance & SEO
+
 - **Static Site Generation**: Pre-rendered pages for instant load times
 - **SEO Optimization**: Metadata, structured data, and Open Graph tags
 - **Responsive Design**: Mobile-first layout that adapts to all screen sizes
@@ -228,6 +227,7 @@ bun prettier:check
 - **Accessibility**: WCAG 2.1 AA compliance with semantic HTML and ARIA labels
 
 ### Design & UX
+
 - **Dark Mode**: System-aware theme with manual toggle using next-themes
 - **Smooth Animations**: Subtle animations with tw-animate-css
 - **Modern UI Components**: shadcn-inspired components with class-variance-authority
@@ -236,26 +236,24 @@ bun prettier:check
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- RELATED PROJECTS -->
+
 ## Related Projects
 
 BLOCA Landing is part of the **BLOCA (Batch-Level Optimization through Compaction Analytics)** ecosystem:
 
-* **[bloca-api](https://github.com/integratech-org/bloca-api)** - Cloud REST API backend for data persistence and business logic
-* **[bloca-edge](https://github.com/integratech-org/bloca-edge)** - IoT edge hub running on Raspberry Pi for real-time telemetry
-* **[bloca-ml](https://github.com/integratech-org/bloca-ml)** - Machine learning service for compressive strength prediction and defect classification
-* **[bloca-admin](https://github.com/integratech-org/bloca-admin)** - Web admin dashboard for system oversight
-* **[bloca-mobile](https://github.com/integratech-org/bloca-mobile)** - Mobile application for machine operators
-* **[bloca-firmware](https://github.com/integratech-org/bloca-firmware)** - ESP32 firmware for sensor and actuator control
-* **[IntegraTech Organization](https://github.com/integratech-org)** - View all BLOCA projects and documentation
+- **[bloca-api](https://github.com/integratech-org/bloca-api)** - Cloud REST API backend for data persistence and business logic
+- **[bloca-edge](https://github.com/integratech-org/bloca-edge)** - IoT edge hub running on Raspberry Pi for real-time telemetry
+- **[bloca-ml](https://github.com/integratech-org/bloca-ml)** - Machine learning service for compressive strength prediction and defect classification
+- **[bloca-admin](https://github.com/integratech-org/bloca-admin)** - Web admin dashboard for system oversight
+- **[bloca-mobile](https://github.com/integratech-org/bloca-mobile)** - Mobile application for machine operators
+- **[bloca-firmware](https://github.com/integratech-org/bloca-firmware)** - ESP32 firmware for sensor and actuator control
+- **[IntegraTech Organization](https://github.com/integratech-org)** - View all BLOCA projects and documentation
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- CONTACT -->
+
 ## Contact
 
 IntegraTech - [Facebook](https://www.facebook.com/profile.php?id=61592806334500) - integratech1@outlook.com
@@ -264,9 +262,8 @@ Project Link: [https://github.com/integratech-org/bloca-landing](https://github.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/integratech-org/bloca-landing.svg?style=for-the-badge
 [contributors-url]: https://github.com/integratech-org/bloca-landing/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/integratech-org/bloca-landing.svg?style=for-the-badge
@@ -278,6 +275,7 @@ Project Link: [https://github.com/integratech-org/bloca-landing](https://github.
 [product-banner]: images/banner.png
 
 <!-- Technology Badges -->
+
 [Next.js]: https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
