@@ -1,5 +1,12 @@
-import { ThemeProvider } from "@/components/theme-provider"
+"use client"
+
+import LenisProvider from "@/providers/lenis-provider"
+import { ThemeProvider } from "@/providers/theme-provider"
 
 export default function Providers({ children }: { children: React.ReactNode }) {
-  return <ThemeProvider>{children}</ThemeProvider>
+  return (
+    <LenisProvider>
+      <ThemeProvider>{children}</ThemeProvider>
+    </LenisProvider>
+  )
 }
