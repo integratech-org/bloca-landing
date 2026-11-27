@@ -61,6 +61,9 @@ ENV HOSTNAME="0.0.0.0"
 # Uncomment the following line in case you want to disable telemetry during the run time.
 # ENV NEXT_TELEMETRY_DISABLED=1
 
+# Create the non-root runtime user.
+RUN addgroup -S bun && adduser -S -G bun bun
+
 # Copy production assets
 COPY --from=builder --chown=bun:bun /app/public ./public
 
