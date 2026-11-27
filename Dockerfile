@@ -5,7 +5,7 @@
 # This Dockerfile.bun is specifically configured for projects using Bun
 # For npm/pnpm or yarn, refer to the Dockerfile instead
 
-FROM dhi.io/bun:1-alpine-dev AS dependencies
+FROM dhi.io/bun:1.4.5-alpine3.24-dev AS dependencies
 
 # Set working directory
 WORKDIR /app
@@ -21,7 +21,7 @@ RUN --mount=type=cache,target=/root/.bun/install/cache \
 # Stage 2: Build Next.js application in standalone mode
 # ============================================
 
-FROM dhi.io/bun:1-alpine-dev AS builder
+FROM dhi.io/bun:1.4.5-alpine3.24-dev AS builder
 
 # Set working directory
 WORKDIR /app
@@ -46,7 +46,7 @@ RUN bun run build
 # Stage 3: Run Next.js application
 # ============================================
 
-FROM dhi.io/bun:1-alpine-dev AS runner
+FROM dhi.io/bun:1.4.5-alpine3.24-dev AS runner
 
 # Set working directory
 WORKDIR /app

@@ -2,7 +2,7 @@
 # Development Dockerfile for Next.js
 # ============================================
 
-FROM dhi.io/bun:1-alpine-dev AS dev
+FROM dhi.io/bun:1.4.5-alpine3.24-dev AS dev
 
 WORKDIR /app
 
