@@ -1,21 +1,24 @@
 import { env } from "@/config/env"
-import ky, { HTTPError } from "ky"
+import ky from "ky"
+import { getCSRFToken } from "./django"
 
 export const api = ky.create({
   baseUrl: env.API_URL,
   timeout: 15_000,
+  credentials: "include",
   hooks: {
-    beforeError: [
-      async ({ error }) => {
-        if (error instanceof HTTPError) {
-          const body = await error.response
-            .clone()
-            .json()
-            .catch(() => ({}))
-          error.message = body.message ?? `HTTP ${error.response.status}`
-          error.data = body
+    beforeRequest: [
+      async ({ request }) => {
+        if (["GET", "HEAD", "OPTIONS"].includes(request.method)) return
+
+        let token = getCSRFToken()
+        if (!token) {
+          await ky.get(`${env.API_URL}/_allauth/browser/v1/config`, {
+            credentials: "include",
+          })
+          token = getCSRFToken()
         }
-        return error
+        if (token) request.headers.set("X-CSRFToken", token)
       },
     ],
   },
